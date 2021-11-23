@@ -14,16 +14,16 @@ foreach($annonces as $annonce){
 ?>
 <div class="card m-4" style="width:20%">    
     <div class="card-body">
-        <h3 class="card-title text-uppercase"><?php echo $annonce['title'];?></h3>                
+        <h3 class="card-title text-uppercase text-center"><?php echo $annonce['title'];?></h3>                
         
-        <p>Type d'annonce : <?php echo $annonce['type']; ?></p>
-        <p>Prix : <?php echo $annonce['price']; ?>€.</p>
+        <p class="text-bold">Type d'annonce : <?php echo $annonce['type']; ?></p>
+        <p class="text-bold">Prix : <?php echo $annonce['price']; ?>€.</p>
         <hr>
-        <div class="d-flex justify-content-around">
-        <a href="detail.php?id=<?php echo $annonce['id']; ?>" class="btn btn-outline-warning col-5">Consulter en détail cette annonce</a>
+        <div class="text-center">
+        <a href="detail.php?id=<?php echo $annonce['id']; ?>" class="btn btn-outline-warning col-10 mx-auto mt-2">Consulter en détail cette annonce</a>
         <?php
             if ($annonce['reserved']) {
-                echo '<button class="btn btn-secondary col-5">Réservé</button>';
+                echo '<button class="btn btn-secondary col-10 mx-auto mt-2">Réservé</button>';
             }
         ?>  
         </div>     

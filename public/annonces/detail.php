@@ -19,18 +19,19 @@ include_once "../partials/_detail-annonce.php";
         <hr>        
         <p>Le prix est de : <?php echo $annonce['price']; ?>€.</p>
         <hr>
-        <p class="text-bold">Message de réservation :</p>
-        <textarea name="reservation_message" class="form-control" rows=3><?php echo $annonce['reservation_message']; ?></textarea>
-        <hr>
-        
-        <?php
-                if ($annonce['reserved']) {
-                    echo '<button class="btn btn-secondary col-5">Réservé</button>';
-                } else {
-                    ?>               
+        <p class="text-bold">Message de réservation : <?php echo $annonce['reservation_message']; ?></p>
         <form action="post/reservation_post.php" method="get">
+
+        <?php
+        
+        if ($annonce['reserved']) {
+            echo '<button class="btn btn-secondary ">Réservé</button>';
+        } else {
+            ?>               
+            <textarea name="reservation_message" class="form-control" rows=3><?php echo $annonce['reservation_message']; ?></textarea>
+            <hr>
             <input type="hidden" name="id" value="<?php echo $annonce['id']; ?>">
-            <button type="submit" class="btn btn-warning col-2">Je réserve</button>
+            <button type="submit" class="btn btn-warning ">Je réserve</button>
         </form>        
             <?php
                 }
