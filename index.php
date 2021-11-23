@@ -7,13 +7,15 @@ include_once "_view-annonce.php";
 
 
 <?php
-foreach($annonces as $annonce){ 
+    foreach($annonces as $annonce){        
 ?>
-
 <div  class="mt-4">
-<ul>
+
+   
+        <ul>
     <li class="card-title text-uppercase"><?php echo $annonce['title'];?></li>
-</ul>
+    </ul>
+    
 </div>
 
 <?php

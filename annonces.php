@@ -8,7 +8,7 @@ include_once "_view-annonce.php";
 ?>
 
 
-<div class="d-flex">
+<div class="d-flex flex-wrap">
 <?php
 foreach($annonces as $annonce){
 ?>
