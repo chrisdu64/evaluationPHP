@@ -27,8 +27,7 @@ include_once '../partials/_navbar.php';
 ?>
 
 <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ps ps--active-y">
-    <form action="ajouter-une-annonce_post.php" method="post" class="container" enctype="multipart/form-data">
-        <?php echo $alert ? "<div class='alert alert-{$type} mt-2'>{$message}</div>" : ''; ?>
+    <form action="post/ajouter-une-annonce_post.php" method="post" class="container">
         <div class="mb-3">
             <label for="title" class="form-label">Titre *</label>
             <input type="text" class="form-control" id="title" name="title" required>    
@@ -54,6 +53,7 @@ include_once '../partials/_navbar.php';
             <input type="number" min="1" step="0.1" class="form-control" id="price" name="price" required>
         </div>
         
+        
         <div class="mb-3">
             <button type="submit" class="btn btn-outline-success btn-lg">Ajouter votre annonce</button>
         </div>
@@ -62,5 +62,5 @@ include_once '../partials/_navbar.php';
 
 </main>
 <?php
-include_once '_footer.php';
+include_once '../partials/_footer.php';
 ?>
