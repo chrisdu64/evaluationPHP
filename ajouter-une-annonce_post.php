@@ -1,13 +1,13 @@
 <?php
 
-require '../../../config.php';
+require 'config.php';
 
 echo '<pre>';
 var_dump($_POST);
 echo '</pre>';
 
 if (empty($_POST['title']) || empty($_POST['description']) || empty($_POST['postal_code']) || empty($_POST['city']) || empty($_POST['type']) || empty($_POST['price'])) {
-    header('Location:../ajouter-une-annonce.php?error=missingInput');
+    header('Location:ajouter-une-annonce.php?error=missingInput');
     exit();
 } else {
     $title = htmlspecialchars(trim($_POST['title']));
@@ -34,7 +34,7 @@ $reqAjoutAnnonce->bindValue(':type', $type, PDO::PARAM_STR);
 $reqAjoutAnnonce->bindValue(':price', $price);
 
 $reqAjoutAnnonce->execute();
-    header('Location:../ajouter-une-annonce.php?success=addedAnnonce');
+    header('Location:ajouter-une-annonce.php?success=addedAnnonce');
 
 } catch (PDOException $erreur) {    
     echo $erreur->getMessage();

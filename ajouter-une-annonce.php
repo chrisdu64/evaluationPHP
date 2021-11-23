@@ -1,8 +1,8 @@
 <?php
 
-require '../../config.php';
+require 'config.php';
 
-include_once '../partials/_navbar.php';
+include_once '_navbar.php';
 
 // $alert = false;
 // if (isset($_GET["error"])) {
@@ -27,7 +27,7 @@ include_once '../partials/_navbar.php';
 ?>
 
 <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ps ps--active-y">
-    <form action="post/ajouter-une-annonce_post.php" method="post" class="container">
+    <form action="ajouter-une-annonce_post.php" method="post" class="container">
         <div class="mb-3">
             <label for="title" class="form-label">Titre *</label>
             <input type="text" class="form-control" id="title" name="title" required>    
@@ -61,5 +61,5 @@ include_once '../partials/_navbar.php';
 
 </main>
 <?php
-include_once '../partials/_footer.php';
+include_once '_footer.php';
 ?>

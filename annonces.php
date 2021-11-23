@@ -1,9 +1,9 @@
 <?php
 
-require '../../config.php';
+require 'config.php';
 
-include_once '../partials/_navbar.php';
-include_once "../partials/_view-annonce.php";
+include_once '_navbar.php';
+include_once "_view-annonce.php";
 
 ?>
 
@@ -36,5 +36,5 @@ foreach($annonces as $annonce){
 </div>
 
 <?php
-include_once "../partials/_footer.php";
+include_once "_footer.php";
 ?>

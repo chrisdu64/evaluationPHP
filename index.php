@@ -1,8 +1,8 @@
 <?php
 require 'config.php';
 
-include_once "public/partials/_navbar.php";
-include_once "public/partials/_view-annonce.php";
+include_once "_navbar.php";
+include_once "_view-annonce.php";
 ?>
 
 
@@ -21,5 +21,5 @@ foreach($annonces as $annonce){
 ?>
 
 <?php
-include_once "public/partials/_footer.php";
+include_once "_footer.php";
 ?>

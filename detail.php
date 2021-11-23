@@ -1,9 +1,9 @@
 <?php
 
-require '../../config.php';
+require 'config.php';
 
-include_once '../partials/_navbar.php';
-include_once "../partials/_detail-annonce.php";
+include_once '_navbar.php';
+include_once "_detail-annonce.php";
 
 ?>
 
@@ -20,7 +20,7 @@ include_once "../partials/_detail-annonce.php";
         <p>Le prix est de : <?php echo $annonce['price']; ?>€.</p>
         <hr>
         <p class="text-bold">Message de réservation : <?php echo $annonce['reservation_message']; ?></p>
-        <form action="post/reservation_post.php" method="get">
+        <form action="reservation_post.php" method="get">
 
         <?php
         
@@ -41,5 +41,5 @@ include_once "../partials/_detail-annonce.php";
 </div>
 
 <?php
-include_once '../partials/_footer.php';
+include_once '_footer.php';
 ?>
