@@ -45,7 +45,7 @@ include_once '../partials/_navbar.php';
             <input type="text" class="form-control" id="city" name="city">    
         </div>
         <div class="mb-3">
-            <label for="type" class="form-label">Type de bien *</label>
+            <label for="type" class="form-label">Location ou vente *</label>
             <input type="text" class="form-control" id="type" name="type" required>    
         </div>
         <div class="mb-3">

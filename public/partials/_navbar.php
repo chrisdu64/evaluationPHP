@@ -23,7 +23,7 @@
              <a class="nav-link" href="../annonces/annonces.php">Consulter les annonces disponibles</a>
           </li>       
           <li class="nav-item">        
-            <a class="nav-link" href="public/annonces/ajouter-une-annonce.php">Ajouter une annonce</a>
+            <a class="nav-link" href="../annonces/ajouter-une-annonce.php">Ajouter une annonce</a>
           </li>         
       </ul>     
     </div>

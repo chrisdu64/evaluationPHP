@@ -10,7 +10,7 @@ include_once "public/partials/_view-annonce.php";
 ?>
 
 
-<div class="d-flex">
+
 <?php
 foreach($annonces as $annonce){
 ?>
