@@ -1,29 +1,29 @@
 <?php
 
-require 'includes/config.php';
+require '../../config.php';
 
-include_once '_navbar.php';
+include_once '../partials/_navbar.php';
 
-$alert = false;
-if (isset($_GET["error"])) {
-    $alert = true;
-    if ($_GET['error'] == "missingInput") {
-        $type = "secondary";
-        $message = "Les champs requis sont vides";
-    }
-    if ($_GET['error'] == "pastAvailablity") {
-        $type = "secondary";
-        $message = "La date de réservation est trop proche.";
-    }
-    if ($_GET['error'] == "wrongFormat") {
-        $type = "warning";
-        $message = "L'image est au mauvais format : Les formats acceptés sont jpg,png,jpeg";
-    }
-    if ($_GET['error'] == "unknownError") {
-        $type = "warning";
-        $message = "Une erreur s'est produite, nous nous excusons de la gêne occasionnée. Veuillez contacter l'administrateur du site, merci.";
-    }
-}
+// $alert = false;
+// if (isset($_GET["error"])) {
+//     $alert = true;
+//     if ($_GET['error'] == "missingInput") {
+//         $type = "secondary";
+//         $message = "Les champs requis sont vides";
+//     }
+//     if ($_GET['error'] == "pastAvailablity") {
+//         $type = "secondary";
+//         $message = "La date de réservation est trop proche.";
+//     }
+//     if ($_GET['error'] == "wrongFormat") {
+//         $type = "warning";
+//         $message = "L'image est au mauvais format : Les formats acceptés sont jpg,png,jpeg";
+//     }
+//     if ($_GET['error'] == "unknownError") {
+//         $type = "warning";
+//         $message = "Une erreur s'est produite, nous nous excusons de la gêne occasionnée. Veuillez contacter l'administrateur du site, merci.";
+//     }
+// }
 ?>
 
 <main class="main-content position-relative max-height-vh-100 h-100 mt-1 border-radius-lg ps ps--active-y">
