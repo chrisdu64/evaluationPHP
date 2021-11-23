@@ -1,8 +1,9 @@
 <?php
 
-require '../../config.php';
+require '../../../config.php';
 
-    $id = $_GET['id'];
+    $id = explode('=', $_SERVER['HTTP_REFERER'])[1];
+    
 try {
     $reqReservation = 'UPDATE advert SET reserved = :reserved WHERE id =:id';
     $editReservation = $connexion->prepare($reqReservation);

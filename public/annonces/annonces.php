@@ -20,7 +20,6 @@ foreach($annonces as $annonce){
         <p>Prix : <?php echo $annonce['price']; ?>€.</p>
         <hr>
         <div class="d-flex justify-content-around">
-        <a href="#" class="btn btn-outline-success col-5">Choisir ce séjour</a>     
         <a href="detail.php?id=<?php echo $annonce['id']; ?>" class="btn btn-outline-warning col-5">Consulter en détail cette annonce</a>
         <?php
             if ($annonce['reserved']) {

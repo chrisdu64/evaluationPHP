@@ -52,8 +52,7 @@ include_once '../partials/_navbar.php';
             <label for="price" class="form-label">Prix *</label>
             <input type="number" min="1" step="0.1" class="form-control" id="price" name="price" required>
         </div>
-        
-        
+                
         <div class="mb-3">
             <button type="submit" class="btn btn-outline-success btn-lg">Ajouter votre annonce</button>
         </div>
